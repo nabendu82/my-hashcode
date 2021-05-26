@@ -1,11 +1,12 @@
 import React from 'react'
 
 const Greet = (props) => {
-    console.log(props)
+    const { name, children } = props;
+
     return (
         <>
-            <h1>Hello {props.name}</h1>
-            <p>{props.children}</p>
+            <h1>Hello {name}</h1>
+            <p>{children}</p>
         </>
     )
     // return React.createElement(
